@@ -46,7 +46,7 @@ jobs:
       with:
         host: upsb.xyz
         username: root
-        ket: ${{UPSB_KEY}}
+        ket: ${{ secrets.UPSB_KEY }}
         port: 22
         script: |
           cd UPSB/upsb-main
