@@ -22,4 +22,14 @@ In the project directory, you can run:
 ## About the architecture of Microfronend Application
 
 
+## Сollaborators
+The project UPSB is created by these developers.
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/samakovuluk"><img src="https://avatars.githubusercontent.com/u/35860953?v=4" width="100px" alt=""/><br><sub><b>Samakov Ulukbek</b></sub></a></td>
+    <td align="center"><a href="https://github.com/akimberl"><img src="https://avatars.githubusercontent.com/u/67225394?v=4" width="100px" alt=""/><br><sub><b>Burbu </b></sub></a></td>
+  </tr>
+</table>
+
 
