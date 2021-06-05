@@ -51,6 +51,7 @@ jobs:
         script: |
           cd UPSB/upsb-main
           git pull origin master
+          npm install
           npm run build
           rm -r /data/UPSB/main/build
           mv build /data/UPSB/main
