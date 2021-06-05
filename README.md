@@ -30,7 +30,8 @@ Also, all applications are doesn't have any dependencies each other which will n
 
 The excellence of this architecture, it can be used by a native application which is written in Kotlin. Everything is same with above written, and just the Kotlin application will be a main layer which will combine microfronts. And here the microfronts will render via webview. You may think that this will take a long time to load and it will the bad way. In theory, no, if you will configure caching correctly, the application will work fastly, and without any loads. And it will be impossible to notice that there has webview.
 
-[](Blank%20Diagram%20with%20Kotlin.png.png??raw=true)
+![](Blank%20Diagram%20with%20Kotlin.png??raw=true)
+
 
 ## Сollaborators
 The project UPSB is created by these developers.
