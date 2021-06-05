@@ -37,3 +37,21 @@ jobs:
 
     - name: Build
       run: npm run build
+  job_one:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: testing upsb.xyz server ssh connection
+      uses: appleboy/ssh-action@master
+      with:
+        host: upsb.xyz
+        username: root
+        ket: ${{UPSB_KEY}}
+        port: 22
+        script: |
+          cd UPSB/upsb-main
+          git pull origin master
+          npm run build
+          rm -r /data/UPSB/main/build
+          mv build /data/UPSB/main
+      
