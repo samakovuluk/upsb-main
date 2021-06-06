@@ -3,6 +3,7 @@
 
 # Microfrontend Application for Hackaton DEV-HACK
 This is the main core layer for our microfrontend application. Project consist of three microfrontends: Wallet, Credit, Deposit. And all application is build by the library react. 
+
 This architecture helps efficiently deploy, develop, and scale individual parts of the application backend. A microfrontend is that the team can independently develop, test, and deploy as a whole. All the microservices are hosting separately and they doesn't have any depencies each other. And core layer application is composes and combine all microfrontends by the rendering their main.js script with lazy load way.
 
 
