@@ -21,7 +21,7 @@ const defaultHistory = createBrowserHistory();
 const {
   REACT_APP_WALLET_HOST: walletHost,
   REACT_APP_CREDIT_HOST: creditHost,
-  REACT_APP_DEPOSIT_HOST: deposittHost,
+  REACT_APP_DEPOSIT_HOST: depositHost,
 } = process.env;
 
 // eslint-disable-next-line react/prop-types
@@ -33,13 +33,13 @@ function Wallet({ history }) {
 // eslint-disable-next-line react/prop-types
 function Credit({ history }) {
   // eslint-disable-next-line react/jsx-filename-extension
-  return <MicroFrontend history={history} host={creditHost} name="Wallet" />;
+  return <MicroFrontend history={history} host={creditHost} name="Credit" />;
 }
 
 // eslint-disable-next-line react/prop-types
 function Deposit({ history }) {
   // eslint-disable-next-line react/jsx-filename-extension
-  return <MicroFrontend history={history} host={deposittHost} name="Wallet" />;
+  return <MicroFrontend history={history} host={depositHost} name="Deposit" />;
 }
 
 function Home() {
@@ -101,9 +101,9 @@ function Home() {
             onKeyDown={() => {}}
           >
             <div className="mainTitle">
-              {value === 'wallet' && <Wallet />}
-              {value === 'credit' && <Credit />}
-              {value === 'deposit' && <Deposit />}
+              {/* <Wallet /> */}
+               {/* {/* <Credit /> */}
+              <Deposit />
             </div>
           </div>
         </div>
