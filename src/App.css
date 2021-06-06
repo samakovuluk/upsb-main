@@ -1,28 +1,115 @@
+#root {
+  min-height: 100vh;
+}
+
+.root {
+  min-height: 100vh;
+  position: relative;
+  background-color: #E5E5E5;
+}
+
+.fullName {
+  margin-top: 13px;
+  font-size: 24px;
+}
+
+.customLabel {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #838383;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .banner {
   background: #f5f5da;
   padding: 30px;
   text-align: center;
   border-radius: 20px;
 }
-.banner-title {
-  color: #2d3d29;
-}
 
-.home {
-  margin-top: 30px;
-  width: 100%;
-  text-align: center;
-}
-.content {
-  margin: auto;
-  width: 70%;
-  padding: 10px 0px;
-  background:  #f5f5da;
-  display: inline-block;
-  border-radius: 10px;
-}
 .wallet {
-  display: inline-block;
-  width: 45%;
+  margin: 10px 8px;
+  width: 109px;
+  height: 145px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 2px 2px #2B2D84;
 }
 
+.wallet > .mainTitle {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+
+.wallet .label {
+  font-size: 12px;
+  color: #838383;
+  margin-left: 10px;
+}
+
+.wallet .account {
+  margin-top: 2px;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #2B2D84;
+}
+
+.wallet .secondaryFont {
+  color: #838383;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainWallet {
+  margin-top: 60px;
+  width: 343px;
+  height: 197px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 2px 2px #2B2D84;
+}
+
+.mainWallet > .mainTitle {
+  font-size: 24px;
+  margin-left: 27px;
+  margin-top: 27px;
+  margin-bottom: 16px;
+}
+
+.mainWallet .account {
+  margin-left: 27px;
+  font-size: 32px;
+  color: #2B2D84;
+  margin-bottom: 20px;
+}
+
+.mainWallet .label {
+  font-size: 16px;
+  color: #838383;
+  margin-left: 27px;
+  margin-bottom: 16px;
+}
+
+.mainWallet .accountNumber {
+  font-size: 16px;
+  margin-left: 27px;
+  padding-bottom: 40px;
+}
