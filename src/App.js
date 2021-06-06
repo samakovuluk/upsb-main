@@ -1,10 +1,9 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter,
   Switch,
   Route,
-  useHistory,
 } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import { CreditCard, AccountBalance } from '@material-ui/icons';
@@ -21,6 +20,8 @@ const defaultHistory = createBrowserHistory();
 
 const {
   REACT_APP_WALLET_HOST: walletHost,
+  REACT_APP_CREDIT_HOST: creditHost,
+  REACT_APP_DEPOSIT_HOST: deposittHost,
 } = process.env;
 
 // eslint-disable-next-line react/prop-types
@@ -29,19 +30,31 @@ function Wallet({ history }) {
   return <MicroFrontend history={history} host={walletHost} name="Wallet" />;
 }
 
+// eslint-disable-next-line react/prop-types
+function Credit({ history }) {
+  // eslint-disable-next-line react/jsx-filename-extension
+  return <MicroFrontend history={history} host={creditHost} name="Wallet" />;
+}
+
+// eslint-disable-next-line react/prop-types
+function Deposit({ history }) {
+  // eslint-disable-next-line react/jsx-filename-extension
+  return <MicroFrontend history={history} host={deposittHost} name="Wallet" />;
+}
+
 function Home() {
-  const history = useHistory();
+  const [value, setValue] = useState('wallet');
 
   const handleWalletClick = () => {
-    history.push('/wallet');
+    setValue('wallet');
   };
 
   const handleCreditClick = () => {
-    history.push('/credit');
+    setValue('credit');
   };
 
   const handleDepositClick = () => {
-    history.push('/deposit');
+    setValue('deposit');
   };
 
   return (
@@ -87,10 +100,11 @@ function Home() {
             onClick={handleWalletClick}
             onKeyDown={() => {}}
           >
-            <div className="mainTitle">Кошелек</div>
-            <div className="account">150 813, 48 ₽</div>
-            <div className="label">Дебетовая карта номер:</div>
-            <div className="accountNumber">2508 3583 **** 7643</div>
+            <div className="mainTitle">
+              {value === 'wallet' && <Wallet />}
+              {value === 'credit' && <Credit />}
+              {value === 'deposit' && <Deposit />}
+            </div>
           </div>
         </div>
       </div>
