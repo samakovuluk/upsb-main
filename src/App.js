@@ -91,7 +91,7 @@ function Home() {
           onClick={handleDepositClick}
           onKeyDown={() => {}}
         >
-          <div className="mainTitle secondaryFont">Кредитная карта</div>
+          <div className="mainTitle secondaryFont">Депозит</div>
           <div className="account">
             <AccountBalance />
           </div>
@@ -124,6 +124,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/wallet/" component={Wallet} />
+          <Route exact path="/depoist/" component={Deposit} />
+          <Route exact path="/credit/" component={Credit} />
         </Switch>
       </>
     </BrowserRouter>
