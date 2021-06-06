@@ -6,6 +6,10 @@ import {
   Route,
 } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
+
+import * as Sentry from "@sentry/react";
+import { Integrations } from "@sentry/tracing";
+
 import { CreditCard, AccountBalance } from '@material-ui/icons';
 
 import MicroFrontend from './MicroFrontend';
@@ -101,9 +105,9 @@ function Home() {
             onKeyDown={() => {}}
           >
             <div className="mainTitle">
-              <Wallet />
-               {/* {/* <Credit /> */}
-              {/* <Deposit /> */}
+              {value === 'wallet' && <Wallet />}
+              {value === 'credit' && <Credit />}
+              {value === 'deposit' && <Deposit />}
             </div>
           </div>
         </div>
@@ -112,13 +116,6 @@ function Home() {
     </div>
   );
 }
-
-// {/* <div className="wallet">
-//           <Wallet />
-//         </div>
-//         <div className="wallet">
-//           <Wallet />
-//         </div> */}
 
 function App() {
   return (
@@ -132,5 +129,15 @@ function App() {
     </BrowserRouter>
   );
 }
+
+Sentry.init({
+  dsn: "https://0733acf987c54215a75744303a6bd21e@o334702.ingest.sentry.io/5802448",
+  integrations: [new Integrations.BrowserTracing()],
+
+  // Set tracesSampleRate to 1.0 to capture 100%
+  // of transactions for performance monitoring.
+  // We recommend adjusting this value in production
+  tracesSampleRate: 1.0,
+});
 
 export default App;
