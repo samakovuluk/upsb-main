@@ -101,9 +101,9 @@ function Home() {
             onKeyDown={() => {}}
           >
             <div className="mainTitle">
-              {/* <Wallet /> */}
+              <Wallet />
                {/* {/* <Credit /> */}
-              <Deposit />
+              {/* <Deposit /> */}
             </div>
           </div>
         </div>
