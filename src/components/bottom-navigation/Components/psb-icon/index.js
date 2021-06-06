@@ -1,0 +1,1 @@
+export { Psb } from './PsbIcon';

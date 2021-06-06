@@ -174,7 +174,7 @@ export function PrimarySearchAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UI
+            ПСБ
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
