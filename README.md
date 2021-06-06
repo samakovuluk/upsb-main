@@ -16,9 +16,21 @@ This architecture helps efficiently deploy, develop, and scale individual parts 
 
 ## :building_construction: How to start project localy
 
-In the project directory, you can run:
+First of all, you need to start all microfronts and then the main core layer.
+#### WALLET microfront
+##### 1) Clone repository `git clone https://github.com/samakovuluk/upsb-wallet.git`
+##### 2) Go to directory and install depencies `cd upsb-wallet & npm install`
+##### 3) Add PORT in  `.env` file
+##### 4) Start microfront  `npm run start`
 
-### `yarn start`
+With same step you need start the other microfront applications. After the starting all microfront applications.
+You need to run the main core layer application.
+#### Start Main application
+##### 1) Clone repository `git clone https://github.com/samakovuluk/upsb-main.git`
+##### 2) Go to directory and install depencies `cd upsb-main & npm install`
+##### 3) Add URLs of all micfronts that you started in  `.env` file
+##### 4) Start application  `npm run start`
+
 
 # :hammer_and_wrench: Architecture
 
