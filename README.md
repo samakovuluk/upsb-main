@@ -2,7 +2,7 @@
                  
 
 # Microfrontend Application for Hackaton DEV-HACK
-This is the main core layer for our microfrontend application. Project consist of three microfrontends: Wallet, Credit, Deposit. And all application is build by the library react. 
+This is the main core layer for our microfrontend application. Project consist of three microfrontends: Wallet, Credit, Deposit. And all application is built by the library react. 
 
 This architecture helps efficiently deploy, develop, and scale individual parts of the application backend. A microfrontend is that the team can independently develop, test, and deploy as a whole. All the microservices are hosting separately and they doesn't have any depencies each other. And core layer application is composes and combine all microfrontends by the rendering their main.js script with lazy load way.
 
@@ -32,7 +32,7 @@ Also, all applications are doesn't have any dependencies each other which will n
 
 
 ### :iphone: Microservice application with Kotlin and React
-The excellence of this architecture, it can be used by a native application which is written in Kotlin. Everything is same with above written, and just the Kotlin application will be a main layer which will combine microfronts. And here the microfronts will render via webview. You may think that this will take a long time to load and it will the bad way. In theory, no, if you will configure caching correctly, the application will work fastly, and without any loads. And it will be impossible to notice that there has webview.
+The excellence of this architecture, it can be used by a native application which is written in Kotlin. Everything is same with above written, and just the Kotlin application will be as main layer which will combine microfronts. And here the microfronts will render via webview in Kotlin application. You may think that this will take a long time to load and it will the bad way, In theory, No!, if you will configure caching correctly, the application will work fastly, and without any loads. And it will be impossible to notice that there has webview.
 
 ![](Blank%20Diagram%20with%20Kotlin.png??raw=true)
 
