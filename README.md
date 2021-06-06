@@ -1,5 +1,5 @@
 <img src="https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png" height="90px">&nbsp;&nbsp;&nbsp;<img src="https://logos-download.com/wp-content/uploads/2016/10/Kotlin_logo_wordmark.png" height="70px">&nbsp;&nbsp;&nbsp;<img src="https://logos-download.com/wp-content/uploads/2016/09/Nginx_logo.png" height="70px">                                                                       
-                  
+                 
 
 # Microfrontend Application for Hackaton DEV-HACK
 This is the main core layer for our microfrontend application. Project consist of three microfrontends: Wallet, Credit, Deposit. And all application is build by the library react. 
@@ -18,6 +18,8 @@ This architecture helps efficiently deploy, develop, and scale individual parts 
 In the project directory, you can run:
 
 ### `yarn start`
+
+# :hammer_and_wrench: Architecture
 
 ### :computer: Microfronend application with React/React Native
 
